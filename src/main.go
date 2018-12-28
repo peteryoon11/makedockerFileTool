@@ -8,6 +8,11 @@ import (
 )
 
 func main() {
+	/*
+		docker build <옵션> <Dockerfile 경로>
+
+	*/
+
 	cmd := exec.Command("docker", "version")
 	/* cmd.Stdin = strings.NewReader("some input")
 	 */
