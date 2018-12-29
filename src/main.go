@@ -13,7 +13,10 @@ func main() {
 
 	*/
 
-	cmd := exec.Command("docker", "version")
+	//cmd := exec.Command("docker", "version")
+	// docker run --rm -it ubuntu:16.04 /bin/bash
+
+	cmd := exec.Command("docker", "run", "ubuntu:16.04")
 	/* cmd.Stdin = strings.NewReader("some input")
 	 */
 	var out bytes.Buffer
