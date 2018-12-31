@@ -27,3 +27,7 @@ func main() {
 	}
 	fmt.Println(out.String())
 }
+
+func StoreInfo() {
+
+}
