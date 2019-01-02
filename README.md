@@ -6,3 +6,4 @@ docker-compose.yml 은 차이는
 
  docker-compose는 "컨테이너"를 만드는 도구
  Dockerfile은 "이미지"를 만드는 도구 
+ test용 
