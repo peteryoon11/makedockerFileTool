@@ -1,5 +1,11 @@
 package main
 
+import (
+	"fmt"
+	"os/exec"
+	"strings"
+)
+
 func main() {
 	/*
 		need element
@@ -14,4 +20,9 @@ func main() {
 	// sudo 를 붙여야 하는 경우에 대해서도 고려 해야 함
 	//docker run --rm -it ubuntu:16.04 /bin/bash
 	//docker run ubuntu:16.04
+	temp := "docker build -t app "
+	for num, item := range strings.Split(temp, " ") {
+		fmt.Println(num, item)
+	}
+	exec.Command("docker")
 }
