@@ -26,3 +26,18 @@ func main() {
 	}
 	exec.Command("docker")
 }
+func MakeDockerFile_cmd() {
+	//temp := "from "
+	//temp_Array := make([]string, 0)
+	//	temp_Array = append(temp_Array, "from")
+	//keyword := make([]string, 0)
+	keyword := []string{"From", "Maintainer", "run", "volume", "workdir", "cmd", "expose"}
+	os := []string{"ubuntu:latest"}
+	/*
+		sudo docker run --name hello-nginx -d -p 80:80 -v /root/data:/data hello:0.1
+
+	*/
+	for index, item := range keyword {
+		fmt.Println(index, item)
+	}
+}
