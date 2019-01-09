@@ -37,7 +37,16 @@ func MakeDockerFile_cmd() {
 		sudo docker run --name hello-nginx -d -p 80:80 -v /root/data:/data hello:0.1
 
 	*/
+
+	/*
+
+		내부 정보 확인
+
+	*/
 	for index, item := range keyword {
+		fmt.Println(index, item)
+	}
+	for index, item := range os {
 		fmt.Println(index, item)
 	}
 }
