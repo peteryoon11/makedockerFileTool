@@ -1,0 +1,7 @@
+docker run -i -t --name  hello-volume -v /data ubuntu /bin/bash
+-> 
+
+docker run -i -t --name hello-volume1 -v /root/data:/data ubuntu /bin/bash 
+
+데이터 볼륨 컨테이너 
+-> 데이터 볼륨을 설정한 컨테이너 
