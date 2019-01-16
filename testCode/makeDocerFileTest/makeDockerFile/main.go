@@ -8,6 +8,11 @@ import (
 
 func main() {
 	tempLocate := "temp"
+	// 이 부분을 절대 경로로 받아올까...
+	/* testUseFulTool 에서 pwd 명령을 날려서
+	경로를 가져오는게 있는데 이거는 윈도우랑
+	윈도우는 chdir 를 사용
+	*/
 	DockerFileLocate := "./" + tempLocate + "/DockerFile"
 	// logger 의 위치 에 대한 테스트 중
 	// ./ ../

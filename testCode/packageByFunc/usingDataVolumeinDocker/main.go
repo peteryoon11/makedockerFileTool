@@ -29,7 +29,7 @@ func main() {
 	//cmd.Stdin = strings.NewReader("some input")
 	var out bytes.Buffer
 	cmd.Stdout = &out
-	cmd.Stdin = strings.NewReader("some input")
+	cmd.Stdin = strings.NewReader("some input") 
 	err := cmd.Run()
 	if err != nil {
 		log.Fatal(err)
